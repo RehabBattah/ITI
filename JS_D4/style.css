@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+h1{text-align: center; color: rgb(94, 84, 65);}
+.slider{
+    text-align: center;
+}
+.slider img{
+    width: 700px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 
+        5px 5px 10px rgb(188, 188, 188), 
+        -5px -5px 10px rgb(198, 198, 198);
+}
+.btns{
+    text-align: center;
+    padding: .3rem 0 1.5rem 0;
+}
+.btn{
+    margin-right: 1rem;
+    color: white;
+    background-color: #c7b79a;
+    padding: 15px 25px ;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
