@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{background-color: rgb(235, 235, 235);}
+.register , .login{
+    text-align: center;
+    padding: 5% 0;
+    background-color: white;
+    width: 50%;
+    margin:2rem auto;
+    height: 70vh;
+    border-radius: 1rem;
+    box-shadow: 
+    5px 5px 10px rgb(188, 188, 188), 
+    -5px -5px 10px rgb(198, 198, 198);
+}
+input {
+    width: 50%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+}
+button { 
+    width: 50%; 
+    padding: 8px; 
+    background: rgb(151, 128, 151); 
+    color: white; 
+    border: none; 
+    border-radius: 3px;
+    cursor: pointer;
+}
+#login{display: none;}
+#home{display: none; text-align: center;}
+
+#card{
+    display: inline-block;
+    width: 200px;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 10px;
+    margin: auto;
+}
+#card h1{
+    font-size: 1.2rem;
+}
+#card img{
+    width: 100%;
+    border-radius: 50%;
+}
+.imgcon{
+    width: 50%;
+    height: 100px;
+    border: 2px solid black;
+}
+img {
+    margin-right: 10px;
+    width: 30%;
+    height: 100%;
+}
+
+.res {
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
