@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{background-color: #D8BFD8;}
+.form{
+    padding: 2rem 1.5rem;
+}
+input{
+    width: 20%;
+    padding: .3rem;
+    border-radius: 5px;
+    border: 1px solid rgb(179, 177, 177);
+}
+label{
+    width: 90px;
+    display: inline-block;
+}
+input[name="isManager"]{
+    width: fit-content;
+    margin-left: 1%;
+}
+.btn{
+    padding: .6rem 1.6rem ;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1%;
+    background-color: #483D8B;
+    color: white;
+    cursor: pointer;
+}
