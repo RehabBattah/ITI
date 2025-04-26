@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{text-decoration: none;}
+li{list-style-type: none;}
+img{width: 100%;}
+h2{
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 8px 16px gray;
+    width: 30%;
+    padding: 2rem 0;
+}
+/* ============================= */
+#hero-section{
+    background-image: url(/imgs/bg-lab.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+#hero-section h1{
+    font-size: 2.5rem;
+}
+#hero-section p{
+    font-size: .9rem;
+    max-width: 50%;
+  word-wrap: break-word;
+  line-height: 2.5;
+}
+#hero-section .btn{
+    padding: 1rem 1.7rem;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    transition: all .3s;
+}
+#hero-section .btn:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
+@media all and (max-width: 1000px) {
+    #hero-section p{
+        max-width: 80%;
+      word-wrap: break-word;
+      line-height: 2;
+    }
+}
+@media all and (max-width: 600px) {
+    #hero-section p{
+        max-width: 95%;
+      word-wrap: break-word;
+      line-height: 2;
+    }
+}
+
+/* ======= Activities ===============  */
+#activities {
+    width: 90%;
+    margin: 4rem auto;
+}
+#activities .cards{
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: all 2s ease-in-out;
+    cursor: pointer; 
+}
+#activities .card{
+    width: 32%;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#activities .card:hover .card-img-icon{
+    position: relative;
+}
+#activities .card img{
+    border-radius:  10px 10px 0 0;
+    display: block;
+    transition: all 0.3s ease;
+}
+#activities .card .card-img-icon ul{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-evenly;
+    background-color: orangered;
+    padding: 0.6rem 0;
+    font-size: 1.4rem;
+    color: white;
+    border-radius:0 0  10px 10px;
+    display: none;
+}
+#activities .card .card-desc{
+    text-align: center;
+    line-height: 2rem;
+    margin: 1.5rem 0 1rem ;
+}
+#activities .card:hover .card-img-icon ul{
+    display: flex
+}
+#activities .card:hover {
+    background-color: gainsboro;
+}
+#activities .card:hover .card-img-icon img {
+    transform: translateY(-1rem);
+}
+#activities .cards {
+    flex-wrap: wrap;
+}
+
+/* ================ */
+@media all and (max-width: 992px) {
+    #activities .card {
+        width: 46%;
+    }
+    #activities .card .card-desc{
+        line-height: 1rem;
+        font-size: .7rem;
+        padding: 0 .5rem;
+    }
+}
+
+@media all and (max-width: 600px) {
+    #activities .card {
+        width: 100%;
+    }
+    #activities .card .card-desc{
+        font-size: .9rem;
+        line-height: 1rem;
+    }
+}
+
+/* ========= Gallery =============================== */
+
+#gallery{
+    width:100%;
+    margin: 6.5rem auto;
+}
+#gallery .gallery-cards{
+    margin: 3rem  auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#gallery .gallery-cards .gallery-card{
+    width: 22%;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+#gallery .gallery-cards .gallery-img {
+    position: relative;
+    padding-bottom: 5rem;
+}
+#gallery .gallery-cards .gallery-img  img{
+    display: block;
+}
+
+#gallery .gallery-cards .gallery-desc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: .9rem;
+    text-align: center;
+    padding: 0 .4rem;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    z-index: 10;
+}
+
+#gallery .gallery-card:hover .gallery-desc{
+    opacity: 1;
+}
+
+#gallery .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3); 
+    transition: all 0.3s ease-in-out;
+}
+#gallery .gallery-card:hover .overlay {
+    opacity: 0;
+}
+
+@media (max-width: 992px) {
+    #gallery .gallery-cards .gallery-card {
+        width: 46%;
+    }
+}
+
+@media (max-width: 600px) {
+    #gallery .gallery-cards .gallery-card {
+        width: 90%;
+    }
+}
+
